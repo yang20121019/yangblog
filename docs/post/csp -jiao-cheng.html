@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/176753404?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# CSP-JS 第一轮复习资料（第二版）
+
+## 目录
+
+1. [计算机硬件](#计算机硬件)
+    - 计算机发展
+    - 我国的计算机发展情况
+    - 冯·诺依曼理论
+    - 计算机硬件组成部分
+    - 计算机常识
+    - 计算机相关人物与奖项
+    - 例题
+2. [软件与操作系统](#软件与操作系统)
+3. [进制与编码](#进制与编码)
+    - 进制的标识
+    - 进制间的相互转换
+    - 带符号数的机器码表示方法
+    - 编码-ASCII码
+    - 机器数与真值
+    - 逻辑运算
+    - 位运算符
+    - 例题
+4. [数据结构](#数据结构)
+    - 字符串
+    - 链表
+    - 栈
+    - 队列
+    - 树形结构
+    - 二叉树
+    - 前/中/后缀表达式
+    - 图
+    - 例题
+5. [排列组合](#排列组合)
+    - 加法原理（分类计数原理）
+    - 乘法原理（分步计数原理）
+    - 排列
+    - 组合
+    - 排列组合解题技巧
+    - 例题
+6. [复杂度](#复杂度)
+    - 定义
+    - 示例
+
+---
+
+## 计算机硬件
+
+### 1. 计算机发展
+
+- **第一代计算机（1946–1958）**：
+  - 使用**电子管**作为主要元件，体积巨大、能耗大，计算速度较慢。">
+<meta property="og:title" content="csp 教程">
+<meta property="og:description" content="# CSP-JS 第一轮复习资料（第二版）
+
+## 目录
+
+1. [计算机硬件](#计算机硬件)
+    - 计算机发展
+    - 我国的计算机发展情况
+    - 冯·诺依曼理论
+    - 计算机硬件组成部分
+    - 计算机常识
+    - 计算机相关人物与奖项
+    - 例题
+2. [软件与操作系统](#软件与操作系统)
+3. [进制与编码](#进制与编码)
+    - 进制的标识
+    - 进制间的相互转换
+    - 带符号数的机器码表示方法
+    - 编码-ASCII码
+    - 机器数与真值
+    - 逻辑运算
+    - 位运算符
+    - 例题
+4. [数据结构](#数据结构)
+    - 字符串
+    - 链表
+    - 栈
+    - 队列
+    - 树形结构
+    - 二叉树
+    - 前/中/后缀表达式
+    - 图
+    - 例题
+5. [排列组合](#排列组合)
+    - 加法原理（分类计数原理）
+    - 乘法原理（分步计数原理）
+    - 排列
+    - 组合
+    - 排列组合解题技巧
+    - 例题
+6. [复杂度](#复杂度)
+    - 定义
+    - 示例
+
+---
+
+## 计算机硬件
+
+### 1. 计算机发展
+
+- **第一代计算机（1946–1958）**：
+  - 使用**电子管**作为主要元件，体积巨大、能耗大，计算速度较慢。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yang20121019.github.io/yangblog/post/csp%20-jiao-cheng.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/176753404?v=4">
+<title>csp 教程</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">csp 教程</h1>
+<div class="title-right">
+    <a href="https://yang20121019.github.io/yangblog" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/yang20121019/yangblog/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>CSP-JS 第一轮复习资料（第二版）</h1>
+<h2>目录</h2>
+<ol>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6">计算机硬件</a>
+<ul>
+<li>计算机发展</li>
+<li>我国的计算机发展情况</li>
+<li>冯·诺依曼理论</li>
+<li>计算机硬件组成部分</li>
+<li>计算机常识</li>
+<li>计算机相关人物与奖项</li>
+<li>例题</li>
+</ul>
+</li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">软件与操作系统</a></li>
+<li><a href="#%E8%BF%9B%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A0%81">进制与编码</a>
+<ul>
+<li>进制的标识</li>
+<li>进制间的相互转换</li>
+<li>带符号数的机器码表示方法</li>
+<li>编码-ASCII码</li>
+<li>机器数与真值</li>
+<li>逻辑运算</li>
+<li>位运算符</li>
+<li>例题</li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a>
+<ul>
+<li>字符串</li>
+<li>链表</li>
+<li>栈</li>
+<li>队列</li>
+<li>树形结构</li>
+<li>二叉树</li>
+<li>前/中/后缀表达式</li>
+<li>图</li>
+<li>例题</li>
+</ul>
+</li>
+<li><a href="#%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88">排列组合</a>
+<ul>
+<li>加法原理（分类计数原理）</li>
+<li>乘法原理（分步计数原理）</li>
+<li>排列</li>
+<li>组合</li>
+<li>排列组合解题技巧</li>
+<li>例题</li>
+</ul>
+</li>
+<li><a href="#%E5%A4%8D%E6%9D%82%E5%BA%A6">复杂度</a>
+<ul>
+<li>定义</li>
+<li>示例</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>计算机硬件</h2>
+<h3>1. 计算机发展</h3>
+<ul>
+<li>
+<p><strong>第一代计算机（1946–1958）</strong>：</p>
+<ul>
+<li>使用<strong>电子管</strong>作为主要元件，体积巨大、能耗大，计算速度较慢。</li>
+<li><strong>代表性计算机</strong>：ENIAC（电子数值积分和计算机）。</li>
+</ul>
+</li>
+<li>
+<p><strong>第二代计算机（1959–1964）</strong>：</p>
+<ul>
+<li>使用<strong>晶体管</strong>替代电子管，体积更小、效率更高、能耗更低。</li>
+<li><strong>代表性计算机</strong>：IBM 1401、CDC 1604。</li>
+</ul>
+</li>
+<li>
+<p><strong>第三代计算机（1965–1970）</strong>：</p>
+<ul>
+<li>使用<strong>集成电路（IC）</strong>，计算机性能大幅提升，体积进一步缩小。</li>
+<li><strong>代表性计算机</strong>：IBM 360系列。</li>
+</ul>
+</li>
+<li>
+<p><strong>第四代计算机（1971至今）</strong>：</p>
+<ul>
+<li>使用<strong>大规模集成电路（VLSI）</strong>，使得计算机高度集成，进入个人计算机时代。</li>
+<li><strong>代表性计算机</strong>：Apple II、IBM PC。</li>
+</ul>
+</li>
+</ul>
+<h3>2. 我国的计算机发展情况</h3>
+<ul>
+<li><strong>1960年</strong>：我国成功研制出<strong>107机</strong>，成为第一台国产计算机。</li>
+<li><strong>1997年</strong>：我国研制出超算<strong>银河III</strong>，每秒运行130亿次，为世界领先水平。</li>
+</ul>
+<h3>3. 冯·诺依曼理论</h3>
+<ul>
+<li>提出了计算机的<strong>存储程序原理</strong>：程序和数据共存于内存中，计算机通过顺序读取指令并执行。</li>
+<li>计算机由五大部分组成：<strong>输入设备</strong>、<strong>输出设备</strong>、<strong>运算器</strong>、<strong>控制器</strong>和<strong>存储器</strong>。</li>
+</ul>
+<h3>4. 计算机硬件组成部分</h3>
+<ul>
+<li>
+<p><strong>中央处理单元（CPU）</strong>：</p>
+<ul>
+<li>负责执行计算机的程序和指令。</li>
+<li>包含<strong>算术逻辑单元（ALU）</strong>、<strong>控制单元（CU）和寄存器</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>内存（RAM）</strong>：</p>
+<ul>
+<li>临时存储数据，读写速度快。</li>
+</ul>
+</li>
+<li>
+<p><strong>硬盘/固态硬盘（HDD/SSD）</strong>：</p>
+<ul>
+<li>用于长期存储数据。</li>
+</ul>
+</li>
+<li>
+<p><strong>输入设备</strong>：</p>
+<ul>
+<li>如<strong>键盘</strong>、<strong>鼠标</strong>、<strong>扫描仪</strong>等。</li>
+</ul>
+</li>
+<li>
+<p><strong>输出设备</strong>：</p>
+<ul>
+<li>如<strong>显示器</strong>、<strong>打印机</strong>等。</li>
+</ul>
+</li>
+</ul>
+<h3>5. 计算机常识</h3>
+<ul>
+<li><strong>操作系统</strong>：计算机的软件系统，负责硬件管理和资源调度。</li>
+<li><strong>常见操作系统</strong>：Windows、Linux、macOS。</li>
+</ul>
+<h3>6. 计算机相关人物与奖项</h3>
+<ul>
+<li><strong>图灵奖</strong>：计算机科学界的最高奖项，被称为“计算机界的诺贝尔奖”。</li>
+<li><strong>冯·诺依曼</strong>：提出了冯·诺依曼结构，并奠定了计算机体系结构的基础。</li>
+</ul>
+<h3>例题</h3>
+<ol>
+<li>
+<p><strong>问题</strong>：第一代计算机使用的是什么技术？</p>
+<ul>
+<li><strong>选项</strong>：<br>
+A) 晶体管<br>
+B) 电子管<br>
+C) 集成电路<br>
+D) 大规模集成电路</li>
+<li><strong>答案</strong>：B) 电子管</li>
+</ul>
+</li>
+<li>
+<p><strong>问题</strong>：下列哪一项不是冯·诺依曼计算机结构的一部分？</p>
+<ul>
+<li><strong>选项</strong>：<br>
+A) 输入设备<br>
+B) 输出设备<br>
+C) 集成电路<br>
+D) 存储器</li>
+<li><strong>答案</strong>：C) 集成电路</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>软件与操作系统</h2>
+<h3>1. 操作系统功能</h3>
+<ul>
+<li><strong>资源管理</strong>：负责分配和管理计算机的硬件资源（CPU、内存等）。</li>
+<li><strong>任务调度</strong>：管理多个进程的执行顺序，保证系统的高效性和稳定性。</li>
+<li><strong>文件管理</strong>：负责文件的存储、访问和权限管理。</li>
+</ul>
+<h3>2. 操作系统类型</h3>
+<ul>
+<li><strong>单任务操作系统</strong>：如MS-DOS，每次只能运行一个任务。</li>
+<li><strong>多任务操作系统</strong>：如Windows、Linux，可以同时运行多个任务。</li>
+</ul>
+<h3>3. 操作系统的常见类型</h3>
+<ul>
+<li><strong>Windows</strong>：广泛使用的图形用户界面操作系统，适用于个人电脑。</li>
+<li><strong>Linux</strong>：开源操作系统，广泛应用于服务器和嵌入式系统。</li>
+<li><strong>macOS</strong>：苹果公司开发的操作系统，基于Unix系统。</li>
+</ul>
+<hr>
+<h2>进制与编码</h2>
+<h3>1. 进制的标识</h3>
+<ul>
+<li><strong>二进制</strong>：使用数字0和1表示，用于计算机内部表示数据。</li>
+<li><strong>十进制</strong>：我们日常使用的进制。</li>
+<li><strong>十六进制</strong>：通常用于计算机表示二进制数，便于人类理解和表示。</li>
+</ul>
+<h3>2. 进制间的相互转换</h3>
+<ul>
+<li><strong>十进制转二进制</strong>：除以2，逆序排列。</li>
+<li><strong>二进制转十进制</strong>：按权展开法，从右到左乘以2的幂次。</li>
+</ul>
+<h3>3. 带符号数的机器码表示方法</h3>
+<ul>
+<li><strong>补码表示法</strong>：正数与原码相同，负数是其绝对值的二进制按位取反加1。</li>
+</ul>
+<h3>4. 编码 - ASCII码</h3>
+<ul>
+<li><strong>ASCII</strong>：美国信息交换标准代码，用7位二进制表示一个字符，如A = 65（十进制）。</li>
+</ul>
+<h3>5. 机器数与真值</h3>
+<ul>
+<li><strong>机器数</strong>：计算机内部存储的二进制表示。</li>
+<li><strong>真值</strong>：实际的数值，通常是浮点数表示。</li>
+</ul>
+<h3>6. 逻辑运算</h3>
+<ul>
+<li><strong>与（AND）</strong>：两个数都为1时结果为1。</li>
+<li><strong>或（OR）</strong>：两个数中有一个为1时结果为1。</li>
+<li><strong>非（NOT）</strong>：将0变为1，将1变为0。</li>
+</ul>
+<h3>7. 位运算符</h3>
+<ul>
+<li><strong>与（&amp;）</strong>：两个数按位进行与运算。</li>
+<li><strong>或（|）</strong>：两个数按位进行或运算。</li>
+<li><strong>异或（^）</strong>：两个数按位进行异或运算。</li>
+<li><strong>取反（~）</strong>：将数的每一位取反。</li>
+</ul>
+<h3>例题</h3>
+<ol>
+<li>
+<p><strong>问题</strong>：二进制数1011转为十进制是多少？</p>
+<ul>
+<li><strong>选项</strong>：<br>
+A) 8<br>
+B) 9<br>
+C) 10<br>
+D) 11</li>
+<li><strong>答案</strong>：D) 11</li>
+</ul>
+</li>
+<li>
+<p><strong>问题</strong>：补码表示法中，-5的补码是多少（假设使用8位）？</p>
+<ul>
+<li><strong>选项</strong>：<br>
+A) 11111011<br>
+B) 11111001<br>
+C) 11111101<br>
+D) 11111111</li>
+<li><strong>答案</strong>：A) 11111011</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>数据结构</h2>
+<h3>1. 字符串</h3>
+<ul>
+<li><strong>定义</strong>：字符串是一组字符的集合，常用于表示文本数据。</li>
+<li><strong>常见操作</strong>：包括查找、替换、连接、分割等。</li>
+</ul>
+<h3>2. 链表</h3>
+<ul>
+<li><strong>定义</strong>：链表由多个结点组成，每个结点包含数据和指向下一个结点的指针。</li>
+<li><strong>类型</strong>：单链表、双链表、循环链表。</li>
+</ul>
+<h3>3. 栈</h3>
+<ul>
+<li><strong>定义</strong>：栈是一种后进先出（LIFO）的数据结构，常用于存储函数调用的返回地址等。</li>
+</ul>
+<h3>4. 队列</h3>
+<ul>
+<li><strong>定义</strong>：队列是一种先进先出（FIFO）的数据结构，用于存储和调度任务。</li>
+</ul>
+<h3>5. 树形结构</h3>
+<ul>
+<li><strong>定义</strong>：树是一个分层结构，每个节点有一个父节点和多个子节点。</li>
+<li><strong>应用</strong>：用于表达层次关系，如文件系统目录结构。</li>
+</ul>
+<h3>6. 二叉树</h3>
+<ul>
+<li><strong>定义</strong>：每个节点最多有两个子节点的树结构，广泛用于数据存储和计算中。</li>
+</ul>
+<h3>7. 前/中/后缀表达式</h3>
+<ul>
+<li><strong>前缀表达式</strong>：运算符位于操作数之前。</li>
+<li><strong>中缀表达式</strong>：运算符位于操作数之间。</li>
+<li><strong>后缀表达式</strong>：运算符位于操作数之后。</li>
+</ul>
+<h3>8. 图</h3>
+<ul>
+<li><strong>定义</strong>：图由节点和边组成，可以是有向图或无向图，常用于表示关系。</li>
+</ul>
+<h3>例题</h3>
+<ol>
+<li><strong>问题</strong>：下列数据结构中，哪一种是后进先出（LIFO）的数据结构？
+<ul>
+<li><strong>选项</strong>：<br>
+A) 栈<br>
+B) 队列<br>
+C) 数组<br>
+D) 链表</li>
+<li><strong>答案</strong>：A) 栈</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>排列组合</h2>
+<h3>1. 加法原理（分类计数原理）</h3>
+<ul>
+<li>如果一个事件有A种方式发生，另一个事件有B种方式发生，那么两个事件发生的总方式数是A + B。</li>
+</ul>
+<h3>2. 乘法原理（分步计数原理）</h3>
+<ul>
+<li>如果一个事件有A种方式发生，另一个事件有B种方式发生，并且这两个事件是独立的，那么它们发生的总方式数是A * B。</li>
+</ul>
+<h3>3. 排列</h3>
+<ul>
+<li><strong>排列数</strong>：从n个元素中选取r个元素的排列数为nPr = n! / (n - r)!</li>
+</ul>
+<h3>4. 组合</h3>
+<ul>
+<li><strong>组合数</strong>：从n个元素中选取r个元素的组合数为nCr = n! / [r!(n - r)!]</li>
+</ul>
+<h3>5. 排列组合解题技巧</h3>
+<ul>
+<li><strong>对称性</strong>：nCr = nCn-r</li>
+<li><strong>递推法</strong>：通过递推公式简化计算。</li>
+</ul>
+<h3>例题</h3>
+<ol>
+<li><strong>问题</strong>：从5个人中选3个人的组合数是多少？
+<ul>
+<li><strong>选项</strong>：<br>
+A) 10<br>
+B) 12<br>
+C) 15<br>
+D) 20</li>
+<li><strong>答案</strong>：A) 10</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>复杂度</h2>
+<h3>1. 定义</h3>
+<p><strong>复杂度</strong>是算法分析中的重要概念，它衡量算法在执行时对资源（时间和空间）的消耗情况。主要分为时间复杂度和空间复杂度。</p>
+<h4>时间复杂度</h4>
+<p>时间复杂度是指算法执行所需时间随输入规模的增长而变化的规律。它主要用来衡量一个算法执行所需的时间。常见的时间复杂度包括：</p>
+<ul>
+<li><strong>O(1)</strong>：常数时间复杂度，表示算法的执行时间不随输入规模的变化而变化。例如，访问数组的元素。</li>
+<li><strong>O(n)</strong>：线性时间复杂度，表示算法的执行时间与输入规模n成正比。例如，遍历数组的每个元素。</li>
+<li><strong>O(n^2)</strong>：平方时间复杂度，表示算法的执行时间与输入规模n的平方成正比。例如，冒泡排序、选择排序。</li>
+<li><strong>O(log n)</strong>：对数时间复杂度，表示算法的执行时间与输入规模n的对数成正比。常见于分治算法，如二分查找。</li>
+<li><strong>O(n log n)</strong>：线性对数时间复杂度，常见于高效的排序算法，如快速排序和归并排序。</li>
+</ul>
+<h4>空间复杂度</h4>
+<p>空间复杂度是指算法执行过程中所需内存空间的大小随输入规模的变化而变化的规律。它主要用来衡量算法执行时所需要的存储空间。常见的空间复杂度包括：</p>
+<ul>
+<li><strong>O(1)</strong>：常数空间复杂度，表示算法所需空间不随输入规模的变化而变化。例如，交换两个变量的值。</li>
+<li><strong>O(n)</strong>：线性空间复杂度，表示算法所需空间与输入规模n成正比。例如，复制数组时需要额外的空间来存储新的数组。</li>
+<li><strong>O(n^2)</strong>：平方空间复杂度，通常出现在需要构造二维数组的情况下，如矩阵乘法。</li>
+</ul>
+<h3>2. 时间复杂度的详细分析</h3>
+<p><strong>常数时间复杂度 (O(1))</strong>：</p>
+<ul>
+<li>例子：访问数组的元素（<code class="notranslate">arr[i]</code>）。无论数组的大小如何，访问一个元素的时间总是相同的。</li>
+<li>常见操作：简单的赋值、条件判断、函数调用。</li>
+</ul>
+<p><strong>线性时间复杂度 (O(n))</strong>：</p>
+<ul>
+<li>例子：遍历一个数组或链表的每个元素。例如，求数组中所有元素的和。</li>
+<li>公式分析：若输入规模为n，则算法需要进行n次操作，因此时间复杂度为O(n)。</li>
+</ul>
+<hr></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://yang20121019.github.io/yangblog">杨文昊的博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","yang20121019/yangblog");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
