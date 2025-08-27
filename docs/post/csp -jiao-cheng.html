@@ -428,52 +428,170 @@ D) 11111111</li>
 <hr>
 <h2>数据结构</h2>
 <h3>1. 字符串</h3>
+<p><strong>定义</strong>：字符串是由一系列字符组成的序列，通常用于表示文本数据。字符串在许多编程语言中都有特殊的处理方式。在C++中，<code class="notranslate">std::string</code>是一个常用的字符串类型，而在C语言中，字符串通常是字符数组。</p>
+<p><strong>常见操作</strong>：</p>
 <ul>
-<li><strong>定义</strong>：字符串是一组字符的集合，常用于表示文本数据。</li>
-<li><strong>常见操作</strong>：包括查找、替换、连接、分割等。</li>
+<li><strong>查找</strong>：寻找某个字符或子串在字符串中的位置。</li>
+<li><strong>替换</strong>：将字符串中的某些字符或子串替换为新的字符或子串。</li>
+<li><strong>连接</strong>：将两个或多个字符串连接成一个新的字符串。</li>
+<li><strong>截取</strong>：从字符串中提取指定位置的子串。</li>
 </ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>文本处理</strong>：如文本搜索、替换、格式化等。</li>
+<li><strong>字符串匹配</strong>：如正则表达式匹配、子串查找等。</li>
+</ul>
+<hr>
 <h3>2. 链表</h3>
+<p><strong>定义</strong>：链表是一种由多个节点组成的线性数据结构，每个节点包含数据和指向下一个节点的指针（或引用）。与数组不同，链表在内存中不需要连续存储。</p>
+<p><strong>类型</strong>：</p>
 <ul>
-<li><strong>定义</strong>：链表由多个结点组成，每个结点包含数据和指向下一个结点的指针。</li>
-<li><strong>类型</strong>：单链表、双链表、循环链表。</li>
+<li><strong>单链表</strong>：每个节点包含一个指向下一个节点的指针。</li>
+<li><strong>双链表</strong>：每个节点包含两个指针，一个指向下一个节点，另一个指向前一个节点。</li>
+<li><strong>循环链表</strong>：最后一个节点的指针指向头节点，形成循环。</li>
 </ul>
+<p><strong>常见操作</strong>：</p>
+<ul>
+<li><strong>插入</strong>：在链表的头部、尾部或中间插入新的节点。</li>
+<li><strong>删除</strong>：删除链表中的指定节点。</li>
+<li><strong>查找</strong>：查找链表中是否包含指定的数据。</li>
+</ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>动态数据结构</strong>：链表适用于无法预知数据量的情况，如实时插入和删除操作频繁的场景。</li>
+<li><strong>内存管理</strong>：操作系统中的内存分配往往使用链表结构。</li>
+</ul>
+<hr>
 <h3>3. 栈</h3>
+<p><strong>定义</strong>：栈（Stack）是一种后进先出（LIFO, Last In First Out）的数据结构。即最后插入的元素最先被删除。</p>
+<p><strong>常见操作</strong>：</p>
 <ul>
-<li><strong>定义</strong>：栈是一种后进先出（LIFO）的数据结构，常用于存储函数调用的返回地址等。</li>
+<li><strong>push</strong>：将元素压入栈中。</li>
+<li><strong>pop</strong>：将栈顶元素弹出。</li>
+<li><strong>peek</strong>：查看栈顶元素，但不删除。</li>
 </ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>函数调用栈</strong>：计算机内部使用栈来管理函数调用和返回。</li>
+<li><strong>括号匹配</strong>：使用栈来检查表达式中的括号是否匹配。</li>
+<li><strong>深度优先搜索（DFS）</strong>：使用栈来实现图的深度优先遍历。</li>
+</ul>
+<hr>
 <h3>4. 队列</h3>
+<p><strong>定义</strong>：队列（Queue）是一种先进先出（FIFO, First In First Out）的数据结构。即最早插入的元素最先被删除。</p>
+<p><strong>常见操作</strong>：</p>
 <ul>
-<li><strong>定义</strong>：队列是一种先进先出（FIFO）的数据结构，用于存储和调度任务。</li>
+<li><strong>enqueue</strong>：将元素添加到队列的尾部。</li>
+<li><strong>dequeue</strong>：将队列的头部元素移除。</li>
+<li><strong>peek</strong>：查看队列的头部元素，但不删除。</li>
 </ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>任务调度</strong>：操作系统中的任务调度通常使用队列来管理任务的执行顺序。</li>
+<li><strong>广度优先搜索（BFS）</strong>：使用队列来实现图的广度优先遍历。</li>
+<li><strong>消息队列</strong>：在分布式系统中，队列用于处理异步消息。</li>
+</ul>
+<hr>
 <h3>5. 树形结构</h3>
+<p><strong>定义</strong>：树是一种层次结构的非线性数据结构，由若干节点组成，每个节点有一个父节点和若干个子节点。树的顶端节点称为根节点。</p>
+<p><strong>常见类型</strong>：</p>
 <ul>
-<li><strong>定义</strong>：树是一个分层结构，每个节点有一个父节点和多个子节点。</li>
-<li><strong>应用</strong>：用于表达层次关系，如文件系统目录结构。</li>
+<li><strong>二叉树</strong>：每个节点最多有两个子节点。</li>
+<li><strong>平衡树</strong>：一种自平衡的二叉搜索树，保持树的高度平衡，从而保证最优的查找性能。</li>
+<li><strong>堆</strong>：一种特殊的二叉树，满足堆的性质，如最大堆或最小堆。</li>
 </ul>
+<p><strong>常见操作</strong>：</p>
+<ul>
+<li><strong>遍历</strong>：常见的遍历方式包括前序遍历、中序遍历、后序遍历和层序遍历。</li>
+<li><strong>插入</strong>：在树中插入新的节点。</li>
+<li><strong>删除</strong>：从树中删除指定的节点。</li>
+</ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>表达式树</strong>：用于解析和计算数学表达式。</li>
+<li><strong>决策树</strong>：在机器学习中用于分类问题。</li>
+<li><strong>二叉查找树（BST）</strong>：用于高效地查找、插入、删除操作。</li>
+</ul>
+<hr>
 <h3>6. 二叉树</h3>
+<p><strong>定义</strong>：二叉树是一种特殊的树结构，其中每个节点最多有两个子节点，通常分别称为<strong>左子节点</strong>和<strong>右子节点</strong>。</p>
+<p><strong>常见类型</strong>：</p>
 <ul>
-<li><strong>定义</strong>：每个节点最多有两个子节点的树结构，广泛用于数据存储和计算中。</li>
+<li><strong>满二叉树</strong>：每个节点都具有两个子节点，除了叶子节点。</li>
+<li><strong>完全二叉树</strong>：除了最后一层外，每层都是满的，且最后一层的节点都靠左对齐。</li>
+<li><strong>平衡二叉树（AVL树）</strong>：树的左右子树的高度差不超过1，保证了最优的查找性能。</li>
 </ul>
+<p><strong>常见操作</strong>：</p>
+<ul>
+<li><strong>前序遍历</strong>：根节点 -&gt; 左子树 -&gt; 右子树。</li>
+<li><strong>中序遍历</strong>：左子树 -&gt; 根节点 -&gt; 右子树。</li>
+<li><strong>后序遍历</strong>：左子树 -&gt; 右子树 -&gt; 根节点。</li>
+<li><strong>层序遍历</strong>：逐层遍历树的所有节点。</li>
+</ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>表达式树</strong>：表示数学表达式，通过遍历树来计算结果。</li>
+<li><strong>二叉查找树</strong>：常用于快速查找、插入、删除数据。</li>
+</ul>
+<hr>
 <h3>7. 前/中/后缀表达式</h3>
+<p><strong>前缀表达式</strong>（Polish Notation）：操作符位于操作数之前。例如，<code class="notranslate">+ 3 4</code>表示<code class="notranslate">3 + 4</code>。</p>
+<p><strong>中缀表达式</strong>：操作符位于操作数之间，是最常见的数学表示方式。例如，<code class="notranslate">3 + 4</code>。</p>
+<p><strong>后缀表达式</strong>（Reverse Polish Notation）：操作符位于操作数之后。例如，<code class="notranslate">3 4 +</code>表示<code class="notranslate">3 + 4</code>。</p>
+<p><strong>应用场景</strong>：</p>
 <ul>
-<li><strong>前缀表达式</strong>：运算符位于操作数之前。</li>
-<li><strong>中缀表达式</strong>：运算符位于操作数之间。</li>
-<li><strong>后缀表达式</strong>：运算符位于操作数之后。</li>
+<li><strong>计算器实现</strong>：后缀表达式常用于计算机中实现计算器，因为它不需要括号来明确操作顺序。</li>
+<li><strong>表达式解析</strong>：前缀和后缀表达式用于避免括号，使表达式计算更加简便。</li>
 </ul>
+<hr>
 <h3>8. 图</h3>
+<p><strong>定义</strong>：图是一种由节点（也称为顶点）和连接节点的边组成的数据结构。图可以是有向图（每条边有方向）或无向图（边没有方向）。</p>
+<p><strong>常见类型</strong>：</p>
 <ul>
-<li><strong>定义</strong>：图由节点和边组成，可以是有向图或无向图，常用于表示关系。</li>
+<li><strong>有向图</strong>：边具有方向，例如：从A到B。</li>
+<li><strong>无向图</strong>：边没有方向，例如：A与B互相连接。</li>
+<li><strong>加权图</strong>：每条边有一个权重，用于表示边的代价或距离。</li>
 </ul>
+<p><strong>常见表示方法</strong>：</p>
+<ul>
+<li><strong>邻接矩阵</strong>：使用一个二维矩阵来表示图中的边，适合于稠密图。</li>
+<li><strong>邻接表</strong>：使用链表或其他数据结构来表示每个节点的邻接节点，适合于稀疏图。</li>
+</ul>
+<p><strong>常见操作</strong>：</p>
+<ul>
+<li><strong>深度优先搜索（DFS）</strong>：从一个节点开始，尽可能深入地访问每个子节点。</li>
+<li><strong>广度优先搜索（BFS）</strong>：从一个节点开始，首先访问所有邻接节点，然后逐层向外扩展。</li>
+</ul>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li><strong>社交网络</strong>：图可以表示社交网络中的用户和他们的关系。</li>
+<li><strong>地图和导航</strong>：图用于表示城市之间的道路和距离，广泛应用于最短路径算法。</li>
+</ul>
+<hr>
 <h3>例题</h3>
 <ol>
-<li><strong>问题</strong>：下列数据结构中，哪一种是后进先出（LIFO）的数据结构？
+<li>
+<p><strong>问题</strong>：下列哪种数据结构适合用来实现回溯算法？</p>
 <ul>
 <li><strong>选项</strong>：<br>
 A) 栈<br>
 B) 队列<br>
-C) 数组<br>
-D) 链表</li>
+C) 链表<br>
+D) 图</li>
 <li><strong>答案</strong>：A) 栈</li>
+<li><strong>解析</strong>：回溯算法使用栈来存储选择的状态和回溯的路径。</li>
+</ul>
+</li>
+<li>
+<p><strong>问题</strong>：在二叉树中，哪种遍历方式是左子树 -&gt; 根节点 -&gt; 右子树？</p>
+<ul>
+<li><strong>选项</strong>：<br>
+A) 前序遍历<br>
+B) 中序遍历<br>
+C) 后序遍历<br>
+D) 层序遍历</li>
+<li><strong>答案</strong>：B) 中序遍历</li>
+<li><strong>解析</strong>：中序遍历的顺序是左子树 -&gt; 根节点 -&gt; 右子树。</li>
 </ul>
 </li>
 </ol>
